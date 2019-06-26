@@ -1,0 +1,991 @@
+Statistical profiling result from isolate-0x102804600-v8.log, (1149 ticks, 128 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     18    1.6%          /usr/lib/system/libsystem_platform.dylib
+      2    0.2%          /usr/lib/system/libsystem_kernel.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     48    4.2%    4.3%  Builtin: InterpreterEntryTrampoline
+     23    2.0%    2.0%  StoreIC: A store IC from the snapshot
+     18    1.6%    1.6%  Builtin: CallFunction_ReceiverIsAny
+     14    1.2%    1.2%  KeyedLoadIC: A keyed load IC from the snapshot
+     12    1.0%    1.1%  Builtin: KeyedLoadIC_Megamorphic
+     11    1.0%    1.0%  Builtin: Call_ReceiverIsAny
+     10    0.9%    0.9%  Builtin: KeyedStoreIC_Megamorphic_Strict
+      6    0.5%    0.5%  LoadIC: A load IC from the snapshot
+      6    0.5%    0.5%  LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      6    0.5%    0.5%  LazyCompile: ~listener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:161:20
+      6    0.5%    0.5%  LazyCompile: ~exports.enroll timers.js:419:26
+      6    0.5%    0.5%  LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      5    0.4%    0.4%  LazyCompile: ~writeHead _http_server.js:189:19
+      5    0.4%    0.4%  LazyCompile: ~resOnFinish _http_server.js:522:21
+      5    0.4%    0.4%  LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      5    0.4%    0.4%  LazyCompile: ~onwrite _stream_writable.js:432:17
+      4    0.3%    0.4%  Stub: StringAddStub
+      4    0.3%    0.4%  LazyCompile: ~runMicrotasksCallback internal/process/next_tick.js:119:33
+      4    0.3%    0.4%  LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/context.js:103:10
+      4    0.3%    0.4%  LazyCompile: ~IncomingMessage _http_incoming.js:38:25
+      4    0.3%    0.4%  Builtin: StringEqual
+      3    0.3%    0.3%  Stub: ArraySingleArgumentConstructorStub
+      3    0.3%    0.3%  LazyCompile: ~write_ _http_outgoing.js:620:16
+      3    0.3%    0.3%  LazyCompile: ~set /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:437:6
+      3    0.3%    0.3%  LazyCompile: ~removeListener events.js:355:28
+      3    0.3%    0.3%  LazyCompile: ~flow _stream_readable.js:843:14
+      3    0.3%    0.3%  LazyCompile: ~clearBuffer _stream_writable.js:479:21
+      3    0.3%    0.3%  LazyCompile: ~_tickCallback internal/process/next_tick.js:151:25
+      3    0.3%    0.3%  LazyCompile: ~Socket.write net.js:702:34
+      2    0.2%    0.2%  Stub: CallApiCallbackStub {1}
+      2    0.2%    0.2%  Stub: CEntryStub {1}
+      2    0.2%    0.2%  LazyCompile: ~writeOrBuffer _stream_writable.js:349:23
+      2    0.2%    0.2%  LazyCompile: ~validateHeader _http_outgoing.js:485:24
+      2    0.2%    0.2%  LazyCompile: ~tryReadSync fs.js:536:21
+      2    0.2%    0.2%  LazyCompile: ~shift internal/process/next_tick.js:30:8
+      2    0.2%    0.2%  LazyCompile: ~scheduleMicrotasks internal/process/next_tick.js:107:30
+      2    0.2%    0.2%  LazyCompile: ~removeAllListeners events.js:410:32
+      2    0.2%    0.2%  LazyCompile: ~read _http_incoming.js:91:47
+      2    0.2%    0.2%  LazyCompile: ~push internal/process/next_tick.js:20:7
+      2    0.2%    0.2%  LazyCompile: ~once events.js:338:44
+      2    0.2%    0.2%  LazyCompile: ~onFinish /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:95:20
+      2    0.2%    0.2%  LazyCompile: ~nextTick internal/process/next_tick.js:245:20
+      2    0.2%    0.2%  LazyCompile: ~matchKnownFields _http_incoming.js:150:26
+      2    0.2%    0.2%  LazyCompile: ~join native array.js:287:46
+      2    0.2%    0.2%  LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:144:16
+      2    0.2%    0.2%  LazyCompile: ~exports.unenroll timers.js:396:45
+      2    0.2%    0.2%  LazyCompile: ~end _http_outgoing.js:723:45
+      2    0.2%    0.2%  LazyCompile: ~emitNone events.js:104:18
+      2    0.2%    0.2%  LazyCompile: ~dispatch /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:35:23
+      2    0.2%    0.2%  LazyCompile: ~controller /Users/ruoshui/learn/node-test/test/app.js:19:53
+      2    0.2%    0.2%  LazyCompile: ~callback /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:53:20
+      2    0.2%    0.2%  LazyCompile: ~assignSocket _http_server.js:162:62
+      2    0.2%    0.2%  LazyCompile: ~_writeRaw _http_outgoing.js:242:19
+      2    0.2%    0.2%  LazyCompile: ~_send _http_outgoing.js:213:49
+      2    0.2%    0.2%  LazyCompile: ~_onceWrap events.js:330:19
+      2    0.2%    0.2%  LazyCompile: ~_addHeaderLines _http_incoming.js:119:25
+      2    0.2%    0.2%  LazyCompile: ~Socket.setTimeout net.js:381:39
+      2    0.2%    0.2%  LazyCompile: ~Socket._writeGeneric net.js:711:42
+      2    0.2%    0.2%  LazyCompile: ~Socket._write net.js:782:35
+      2    0.2%    0.2%  LazyCompile: ~ServerResponse _http_server.js:113:24
+      2    0.2%    0.2%  LazyCompile: ~ReadableState _stream_readable.js:58:23
+      2    0.2%    0.2%  LazyCompile: ~Module._resolveLookupPaths module.js:345:38
+      2    0.2%    0.2%  LazyCompile: ~EventEmitter.init events.js:62:29
+      2    0.2%    0.2%  LazyCompile: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/paloma/router.js:33:10
+      2    0.2%    0.2%  LazyCompile: *onwrite _stream_writable.js:432:17
+      2    0.2%    0.2%  LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      2    0.2%    0.2%  LazyCompile: *nextTick internal/process/next_tick.js:245:20
+      2    0.2%    0.2%  LazyCompile: *first /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:24:15
+      2    0.2%    0.2%  LazyCompile: *emit events.js:156:44
+      2    0.2%    0.2%  KeyedStoreIC: A keyed store IC from the snapshot
+      2    0.2%    0.2%  Builtin: StringPrototypeCharCodeAt
+      2    0.2%    0.2%  Builtin: RegExpPrototypeExec
+      2    0.2%    0.2%  Builtin: LoadIC_Noninlined
+      2    0.2%    0.2%  Builtin: Call_ReceiverIsNullOrUndefined
+      2    0.2%    0.2%  Builtin: ArgumentsAdaptorTrampoline
+      1    0.1%    0.1%  Stub: RecordWriteStub
+      1    0.1%    0.1%  Stub: CallApiCallbackStub
+      1    0.1%    0.1%  Stub: CEntryStub
+      1    0.1%    0.1%  Script: ~<anonymous> internal/wrap_js_stream.js:1:11
+      1    0.1%    0.1%  RegExp: ([.+*?=^!:${}()[\\]|/\\\\])
+      1    0.1%    0.1%  LazyCompile: ~tryStatSync fs.js:514:21
+      1    0.1%    0.1%  LazyCompile: ~tryFile module.js:155:17
+      1    0.1%    0.1%  LazyCompile: ~tryExtensions module.js:170:23
+      1    0.1%    0.1%  LazyCompile: ~tokensToRegExp /Users/ruoshui/learn/node-test/node_modules/path-to-regexp/index.js:299:25
+      1    0.1%    0.1%  LazyCompile: ~spliceOne internal/util.js:273:19
+      1    0.1%    0.1%  LazyCompile: ~set status /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:82:13
+      1    0.1%    0.1%  LazyCompile: ~resume _stream_readable.js:812:16
+      1    0.1%    0.1%  LazyCompile: ~resolve path.js:1156:28
+      1    0.1%    0.1%  LazyCompile: ~remove internal/linkedlist.js:15:16
+      1    0.1%    0.1%  LazyCompile: ~remoteAddress net.js:665:52
+      1    0.1%    0.1%  LazyCompile: ~pushAsyncIds internal/async_hooks.js:352:22
+      1    0.1%    0.1%  LazyCompile: ~popAsyncIds internal/async_hooks.js:365:21
+      1    0.1%    0.1%  LazyCompile: ~parserOnMessageComplete _http_common.js:136:33
+      1    0.1%    0.1%  LazyCompile: ~parse querystring.js:259:15
+      1    0.1%    0.1%  LazyCompile: ~parse /Users/ruoshui/learn/node-test/node_modules/path-to-regexp/index.js:40:16
+      1    0.1%    0.1%  LazyCompile: ~onevent /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:81:26
+      1    0.1%    0.1%  LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:187:10
+      1    0.1%    0.1%  LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1    0.1%    0.1%  LazyCompile: ~onSocket /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:106:20
+      1    0.1%    0.1%  LazyCompile: ~onFinished /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:45:20
+      1    0.1%    0.1%  LazyCompile: ~ok assert.js:69:12
+      1    0.1%    0.1%  LazyCompile: ~normalizeStringPosix path.js:101:30
+      1    0.1%    0.1%  LazyCompile: ~matches /Users/ruoshui/learn/node-test/node_modules/paloma/router.js:72:18
+      1    0.1%    0.1%  LazyCompile: ~isFinished /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:65:20
+      1    0.1%    0.1%  LazyCompile: ~internalNextTick internal/process/next_tick.js:275:28
+      1    0.1%    0.1%  LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:130:27
+      1    0.1%    0.1%  LazyCompile: ~get querystring /Users/ruoshui/learn/node-test/node_modules/koa/lib/request.js:192:18
+      1    0.1%    0.1%  LazyCompile: ~get protocol /Users/ruoshui/learn/node-test/node_modules/koa/lib/request.js:399:15
+      1    0.1%    0.1%  LazyCompile: ~get path /Users/ruoshui/learn/node-test/node_modules/koa/lib/request.js:140:11
+      1    0.1%    0.1%  LazyCompile: ~get _stream_duplex.js:94:6
+      1    0.1%    0.1%  LazyCompile: ~fs.readFileSync fs.js:548:27
+      1    0.1%    0.1%  LazyCompile: ~extname path.js:1455:28
+      1    0.1%    0.1%  LazyCompile: ~exports._unrefActive timers.js:157:32
+      1    0.1%    0.1%  LazyCompile: ~endReadableNT _stream_readable.js:1059:23
+      1    0.1%    0.1%  LazyCompile: ~emitReadable_ _stream_readable.js:511:23
+      1    0.1%    0.1%  LazyCompile: ~emitAfterScript internal/async_hooks.js:331:25
+      1    0.1%    0.1%  LazyCompile: ~emit events.js:156:44
+      1    0.1%    0.1%  LazyCompile: ~debug /Users/ruoshui/learn/node-test/node_modules/debug/src/common.js:67:17
+      1    0.1%    0.1%  LazyCompile: ~createWriteReq net.js:786:24
+      1    0.1%    0.1%  LazyCompile: ~createContext /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:159:16
+      1    0.1%    0.1%  LazyCompile: ~checkIsHttpToken _http_common.js:271:26
+      1    0.1%    0.1%  LazyCompile: ~checkInvalidHeaderChar _http_common.js:321:32
+      1    0.1%    0.1%  LazyCompile: ~charset /Users/ruoshui/learn/node-test/node_modules/mime-types/index.js:49:18
+      1    0.1%    0.1%  LazyCompile: ~byteLength buffer.js:475:20
+      1    0.1%    0.1%  LazyCompile: ~attachListener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:140:24
+      1    0.1%    0.1%  LazyCompile: ~alignPool buffer.js:107:19
+      1    0.1%    0.1%  LazyCompile: ~addListener events.js:296:58
+      1    0.1%    0.1%  LazyCompile: ~_storeHeader _http_outgoing.js:287:22
+      1    0.1%    0.1%  LazyCompile: ~_finish _http_server.js:129:52
+      1    0.1%    0.1%  LazyCompile: ~_finish _http_outgoing.js:788:53
+      1    0.1%    0.1%  LazyCompile: ~_dump _http_incoming.js:313:49
+      1    0.1%    0.1%  LazyCompile: ~_addListener events.js:233:22
+      1    0.1%    0.1%  LazyCompile: ~Writable.write _stream_writable.js:264:36
+      1    0.1%    0.1%  LazyCompile: ~Writable.uncork _stream_writable.js:302:37
+      1    0.1%    0.1%  LazyCompile: ~Writable.cork _stream_writable.js:296:35
+      1    0.1%    0.1%  LazyCompile: ~Uint8Array native typedarray.js:158:31
+      1    0.1%    0.1%  LazyCompile: ~Stream internal/streams/legacy.js:6:16
+      1    0.1%    0.1%  LazyCompile: ~Readable.read _stream_readable.js:365:35
+      1    0.1%    0.1%  LazyCompile: ~Readable.on _stream_readable.js:771:33
+      1    0.1%    0.1%  LazyCompile: ~Readable _stream_readable.js:140:18
+      1    0.1%    0.1%  LazyCompile: ~Module._nodeModulePaths module.js:304:37
+      1    0.1%    0.1%  LazyCompile: ~Module._compile module.js:609:37
+      1    0.1%    0.1%  LazyCompile: ~ConvertToString native array.js:132:25
+      1    0.1%    0.1%  LazyCompile: ~Buffer.toString buffer.js:609:37
+      1    0.1%    0.1%  LazyCompile: ~<anonymous> console.js:76:10
+      1    0.1%    0.1%  LazyCompile: *removeListener events.js:355:28
+      1    0.1%    0.1%  LazyCompile: *push internal/process/next_tick.js:20:7
+      1    0.1%    0.1%  LazyCompile: *parse querystring.js:259:15
+      1    0.1%    0.1%  LazyCompile: *addListener events.js:296:58
+      1    0.1%    0.1%  LazyCompile: *ReadableState _stream_readable.js:58:23
+      1    0.1%    0.1%  LazyCompile: *<anonymous> /Users/ruoshui/learn/node-test/node_modules/paloma/router.js:33:10
+      1    0.1%    0.1%  Handler: An IC handler from the snapshot
+      1    0.1%    0.1%  Builtin: TypedArrayPrototypeLength
+      1    0.1%    0.1%  Builtin: ToBoolean
+      1    0.1%    0.1%  Builtin: StringPrototypeSlice
+      1    0.1%    0.1%  Builtin: StringCharCodeAt
+      1    0.1%    0.1%  Builtin: RegExpConstructor
+      1    0.1%    0.1%  Builtin: PromiseHandle
+      1    0.1%    0.1%  Builtin: ObjectCreate
+      1    0.1%    0.1%  Builtin: MapLookupHashIndex
+      1    0.1%    0.1%  Builtin: LoadICProtoArray
+      1    0.1%    0.1%  Builtin: HandleApiCall
+      1    0.1%    0.1%  Builtin: FunctionPrototypeHasInstance
+      1    0.1%    0.1%  Builtin: FastNewObject
+      1    0.1%    0.1%  Builtin: FastNewClosure
+      1    0.1%    0.1%  Builtin: FastArrayShift
+      1    0.1%    0.1%  Builtin: CallWithArrayLike
+      1    0.1%    0.1%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+
+ [C++]:
+   ticks  total  nonlib   name
+     77    6.7%    6.8%  t node::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     76    6.6%    6.7%  t node::(anonymous namespace)::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     75    6.5%    6.6%  T void node::StreamBase::JSMethod<node::LibuvStreamWrap, &(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    1.7%    1.8%  t node::InternalModuleReadFile(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    1.2%    1.2%  t node::Binding(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    1.2%    1.2%  t node::(anonymous namespace)::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    1.2%    1.2%  T _task_info
+     13    1.1%    1.2%  t node::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     13    1.1%    1.2%  T _http_parser_execute
+      8    0.7%    0.7%  T v8::internal::FunctionCallbackArguments::Call(void (*)(v8::FunctionCallbackInfo<v8::Value> const&))
+      8    0.7%    0.7%  T _thread_policy_get
+      7    0.6%    0.6%  t v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments)
+      5    0.4%    0.4%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObject**, v8::internal::HeapObject*)
+      5    0.4%    0.4%  T v8::internal::StringTable::LookupKey(v8::internal::Isolate*, v8::internal::StringTableKey*)
+      5    0.4%    0.4%  T v8::internal::IncrementalMarking::Step(unsigned long, v8::internal::IncrementalMarking::CompletionAction, v8::internal::IncrementalMarking::ForceCompletionAction, v8::internal::StepOrigin)
+      4    0.3%    0.4%  t v8::internal::LookupIterator::State v8::internal::LookupIterator::LookupInRegularHolder<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+      4    0.3%    0.4%  T v8::internal::JSObject::MigrateToMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+      4    0.3%    0.4%  T node::AsyncWrap::EmitTraceEventDestroy()
+      3    0.3%    0.3%  t v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+      3    0.3%    0.3%  t node::i18n::(anonymous namespace)::GetVersion(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.3%    0.3%  t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.3%    0.3%  t _tiny_free_no_lock
+      3    0.3%    0.3%  T v8::internal::String::IsOneByteEqualTo(v8::internal::Vector<unsigned char const>)
+      3    0.3%    0.3%  T v8::internal::Scanner::Scan()
+      3    0.3%    0.3%  T v8::internal::CanonicalHandleScope::Lookup(v8::internal::Object*)
+      3    0.3%    0.3%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t void v8::internal::LookupIterator::NextInternal<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+      2    0.2%    0.2%  t v8::internal::interpreter::BytecodeGenerator::VisitNoStackOverflowCheck(v8::internal::AstNode*)
+      2    0.2%    0.2%  t v8::internal::Builtin_Impl_ArrayConcat(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      2    0.2%    0.2%  t v8::internal::(anonymous namespace)::MakeStringThin(v8::internal::String*, v8::internal::String*, v8::internal::Isolate*)
+      2    0.2%    0.2%  t v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, bool, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Handle<v8::internal::Object>, v8::internal::Execution::MessageHandling)
+      2    0.2%    0.2%  t v8::internal::(anonymous namespace)::GenerateUnoptimizedCode(v8::internal::ParseInfo*, v8::internal::Isolate*, std::__1::forward_list<std::__1::unique_ptr<v8::internal::CompilationJob, std::__1::default_delete<v8::internal::CompilationJob> >, std::__1::allocator<std::__1::unique_ptr<v8::internal::CompilationJob, std::__1::default_delete<v8::internal::CompilationJob> > > >*)
+      2    0.2%    0.2%  t v8::internal::(anonymous namespace)::AppendFileLocation(v8::internal::Isolate*, v8::internal::StackFrameBase*, v8::internal::IncrementalStringBuilder*)
+      2    0.2%    0.2%  t v8::Maybe<bool> v8::internal::CompiledReplacement::ParseReplacementPattern<unsigned char const>(v8::internal::ZoneList<v8::internal::CompiledReplacement::ReplacementPart>*, v8::internal::Vector<unsigned char const>, v8::internal::FixedArray*, int, int, v8::internal::Zone*)
+      2    0.2%    0.2%  t node::cares_wrap::(anonymous namespace)::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t node::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t node::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t node::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t _tiny_malloc_should_clear
+      2    0.2%    0.2%  T v8::internal::compiler::GraphReducer::ReduceTop()
+      2    0.2%    0.2%  T v8::internal::String::SlowEquals(v8::internal::String*)
+      2    0.2%    0.2%  T v8::internal::SourcePositionTableIterator::Advance()
+      2    0.2%    0.2%  T v8::internal::Scanner::Next()
+      2    0.2%    0.2%  T v8::internal::Object::ConvertToString(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>)
+      2    0.2%    0.2%  T v8::internal::Map::GetOrCreatePrototypeChainValidityCell(v8::internal::Handle<v8::internal::Map>, v8::internal::Isolate*)
+      2    0.2%    0.2%  T v8::internal::FunctionTemplateInfo::IsTemplateFor(v8::internal::Map*)
+      2    0.2%    0.2%  T v8::internal::Deserializer::ReadData(v8::internal::Object**, v8::internal::Object**, int, unsigned char*)
+      2    0.2%    0.2%  T v8::internal::DependentCode::MarkCodeForDeoptimization(v8::internal::Isolate*, v8::internal::DependentCode::DependencyGroup)
+      2    0.2%    0.2%  T v8::internal::Accessors::ErrorStackGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  T v8::HandleScope::Initialize(v8::Isolate*)
+      2    0.2%    0.2%  T node::AsyncWrap::EmitTraceEventAfter()
+      2    0.2%    0.2%  T _mach_msg
+      2    0.2%    0.2%  T __kernelrpc_mach_port_get_refs
+      2    0.2%    0.2%  T ___pthread_init
+      1    0.1%    0.1%  t void v8::internal::String::WriteToFlat<unsigned short>(v8::internal::String*, unsigned short*, int, int)
+      1    0.1%    0.1%  t void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
+      1    0.1%    0.1%  t void v8::internal::Scanner::Advance<false, true>()
+      1    0.1%    0.1%  t void std::__1::vector<v8::internal::Page*, std::__1::allocator<v8::internal::Page*> >::__push_back_slow_path<v8::internal::Page* const&>(v8::internal::Page* const&&&)
+      1    0.1%    0.1%  t void std::__1::vector<v8::internal::Handle<v8::internal::Map>, std::__1::allocator<v8::internal::Handle<v8::internal::Map> > >::__push_back_slow_path<v8::internal::Handle<v8::internal::Map> >(v8::internal::Handle<v8::internal::Map>&&)
+      1    0.1%    0.1%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.1%    0.1%  t v8::internal::compiler::Typer::Visitor::TypeNode(v8::internal::compiler::Node*)
+      1    0.1%    0.1%  t v8::internal::PrototypeIterator::PrototypeIterator(v8::internal::Handle<v8::internal::Map>, v8::internal::PrototypeIterator::WhereToEnd)
+      1    0.1%    0.1%  t v8::internal::PrototypeIterator::Advance()
+      1    0.1%    0.1%  t v8::internal::ParserBase<v8::internal::PreParser>::ParseMemberWithNewPrefixesExpression(bool*, bool*)
+      1    0.1%    0.1%  t v8::internal::ParserBase<v8::internal::PreParser>::ParseExpressionCoverGrammar(bool, bool*)
+      1    0.1%    0.1%  t v8::internal::ParserBase<v8::internal::Parser>::ParseUnaryExpression(bool*)
+      1    0.1%    0.1%  t v8::internal::ParserBase<v8::internal::Parser>::ParseFormalParameter(v8::internal::ParserFormalParameters*, bool*)
+      1    0.1%    0.1%  t v8::internal::ParserBase<v8::internal::Parser>::ParseExpressionOrLabelledStatement(v8::internal::ZoneList<v8::internal::AstRawString const*>*, v8::internal::AllowLabelledFunctionStatement, bool*)
+      1    0.1%    0.1%  t v8::internal::ParserBase<v8::internal::Parser>::ParseAssignmentExpression(bool, bool*)
+      1    0.1%    0.1%  t v8::internal::MemoryAllocator::Unmapper::Unmapper(v8::internal::Heap*, v8::internal::MemoryAllocator*)
+      1    0.1%    0.1%  t v8::internal::LookupIterator::LookupIterator(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>, v8::internal::LookupIterator::Configuration)
+      1    0.1%    0.1%  t v8::internal::IteratingArrayBuiltinDescriptor::InitializePlatformIndependent(v8::internal::CallInterfaceDescriptorData*)
+      1    0.1%    0.1%  t v8::internal::HashTable<v8::internal::NameDictionary, v8::internal::NameDictionaryShape>::Rehash(v8::internal::NameDictionary*)
+      1    0.1%    0.1%  t v8::internal::Handle<v8::internal::String> v8::internal::JsonParser<true>::ScanJsonString<true>()
+      1    0.1%    0.1%  t v8::internal::ExpressionClassifier<v8::internal::ParserTypes<v8::internal::Parser> >::Accumulate(v8::internal::ExpressionClassifier<v8::internal::ParserTypes<v8::internal::Parser> >*, unsigned int, bool)
+      1    0.1%    0.1%  t v8::internal::ConsString* v8::internal::String::VisitFlat<v8::internal::IteratingStringHasher>(v8::internal::IteratingStringHasher*, v8::internal::String*, int)
+      1    0.1%    0.1%  t v8::internal::Builtin_Impl_NumberPrototypeToString(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      1    0.1%    0.1%  t v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      1    0.1%    0.1%  t v8::internal::(anonymous namespace)::StringReplaceGlobalRegExpWithStringHelper(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::RegExpMatchInfo>)
+      1    0.1%    0.1%  t v8::internal::(anonymous namespace)::InitializeIntrinsicFunctionNames()
+      1    0.1%    0.1%  t v8::base::TemplateHashMapImpl<void*, void*, v8::base::HashEqualityThenKeyMatcher<void*, bool (*)(void*, void*)>, v8::base::DefaultAllocationPolicy>::Resize(v8::base::DefaultAllocationPolicy)
+      1    0.1%    0.1%  t std::__1::vector<v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*, v8::internal::ZoneAllocator<v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*> >::__append(unsigned long)
+      1    0.1%    0.1%  t std::__1::utf8_to_utf16(unsigned char const*, unsigned char const*, unsigned char const*&, unsigned short*, unsigned short*, unsigned short*&, unsigned long, std::__1::codecvt_mode)
+      1    0.1%    0.1%  t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t node::Environment::StartProfilerIdleNotifier()::$_2::__invoke(uv_check_s*)
+      1    0.1%    0.1%  t node::(anonymous namespace)::TimerWrap::Now(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t node::(anonymous namespace)::StringPtr::Reset()
+      1    0.1%    0.1%  t node::(anonymous namespace)::Parser::on_header_field(http_parser*, char const*, unsigned long)
+      1    0.1%    0.1%  t node::(anonymous namespace)::Parser::CreateHeaders()
+      1    0.1%    0.1%  t node::(anonymous namespace)::ContextifyScript::RunInThisContext(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t int v8::internal::BinarySearch<(v8::internal::SearchMode)1, v8::internal::DescriptorArray>(v8::internal::DescriptorArray*, v8::internal::Name*, int, int*)
+      1    0.1%    0.1%  t _uv__write_callbacks
+      1    0.1%    0.1%  t _uv__stream_io
+      1    0.1%    0.1%  t _uv__hrtime
+      1    0.1%    0.1%  t _uv__fs_work
+      1    0.1%    0.1%  t _tiny_size
+      1    0.1%    0.1%  t _tiny_malloc_from_free_list
+      1    0.1%    0.1%  t _small_size
+      1    0.1%    0.1%  t _small_malloc_from_free_list
+      1    0.1%    0.1%  t _malloc_zone_register_while_locked
+      1    0.1%    0.1%  t _loadCat
+      1    0.1%    0.1%  t _create_scalable_szone
+      1    0.1%    0.1%  t __malloc_initialize
+      1    0.1%    0.1%  t ___vfprintf
+      1    0.1%    0.1%  T v8_inspector::V8Inspector::create(v8::Isolate*, v8_inspector::V8InspectorClient*)
+      1    0.1%    0.1%  T v8::internal::parsing::ParseProgram(v8::internal::ParseInfo*, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::interpreter::BytecodeGenerator::VisitCall(v8::internal::Call*)
+      1    0.1%    0.1%  T v8::internal::interpreter::BytecodeGenerator::BuildTest(v8::internal::interpreter::BytecodeArrayBuilder::ToBooleanMode, v8::internal::interpreter::BytecodeLabels*, v8::internal::interpreter::BytecodeLabels*, v8::internal::interpreter::BytecodeGenerator::TestFallthrough)
+      1    0.1%    0.1%  T v8::internal::interpreter::BytecodeArrayWriter::EmitBytecode(v8::internal::interpreter::BytecodeNode const*)
+      1    0.1%    0.1%  T v8::internal::compiler::SourcePositionTable::GetSourcePosition(v8::internal::compiler::Node*) const
+      1    0.1%    0.1%  T v8::internal::compiler::NodeProperties::GetControlInput(v8::internal::compiler::Node*, int)
+      1    0.1%    0.1%  T v8::internal::compiler::Node::New(v8::internal::Zone*, unsigned int, v8::internal::compiler::Operator const*, int, v8::internal::compiler::Node* const*, bool)
+      1    0.1%    0.1%  T v8::internal::compiler::LinearScanAllocator::SetLiveRangeAssignedRegister(v8::internal::compiler::LiveRange*, int)
+      1    0.1%    0.1%  T v8::internal::compiler::JSTypedLowering::Reduce(v8::internal::compiler::Node*)
+      1    0.1%    0.1%  T v8::internal::compiler::JSCallReducer::ReduceFunctionPrototypeApply(v8::internal::compiler::Node*)
+      1    0.1%    0.1%  T v8::internal::compiler::GraphTrimmer::TrimGraph()
+      1    0.1%    0.1%  T v8::internal::compiler::BytecodeGraphBuilder::MergeIntoSuccessorEnvironment(int)
+      1    0.1%    0.1%  T v8::internal::Zone::NewExpand(unsigned long)
+      1    0.1%    0.1%  T v8::internal::Zone::New(unsigned long)
+      1    0.1%    0.1%  T v8::internal::TranslatedState::Init(unsigned char*, v8::internal::TranslationIterator*, v8::internal::FixedArray*, v8::internal::RegisterValues*, __sFILE*, int)
+      1    0.1%    0.1%  T v8::internal::TransitionsAccessor::TraverseTransitionTreeInternal(void (*)(v8::internal::Map*, void*), void*, v8::internal::PerThreadAssertScopeDebugOnly<(v8::internal::PerThreadAssertType)0, false>*)
+      1    0.1%    0.1%  T v8::internal::TransitionsAccessor::Insert(v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Map>, v8::internal::SimpleTransitionFlag)
+      1    0.1%    0.1%  T v8::internal::TransitionsAccessor::Initialize()
+      1    0.1%    0.1%  T v8::internal::ThreadId::GetCurrentThreadId()
+      1    0.1%    0.1%  T v8::internal::TextNode::TextEmitPass(v8::internal::RegExpCompiler*, v8::internal::TextNode::TextEmitPassType, bool, v8::internal::Trace*, bool, int*)
+      1    0.1%    0.1%  T v8::internal::String::SlowFlatten(v8::internal::Handle<v8::internal::ConsString>, v8::internal::PretenureFlag)
+      1    0.1%    0.1%  T v8::internal::String::IsUtf8EqualTo(v8::internal::Vector<char const>, bool)
+      1    0.1%    0.1%  T v8::internal::String::CalculateLineEnds(v8::internal::Handle<v8::internal::String>, bool)
+      1    0.1%    0.1%  T v8::internal::StoreBuffer::InsertDuringRuntime(v8::internal::StoreBuffer*, unsigned char*)
+      1    0.1%    0.1%  T v8::internal::Script::InitLineEnds(v8::internal::Handle<v8::internal::Script>)
+      1    0.1%    0.1%  T v8::internal::ScopeInfo::Create(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::Scope*, v8::internal::MaybeHandle<v8::internal::ScopeInfo>)
+      1    0.1%    0.1%  T v8::internal::Scope::LookupRecursive(v8::internal::VariableProxy*, v8::internal::Scope*)
+      1    0.1%    0.1%  T v8::internal::Scanner::ScanString()
+      1    0.1%    0.1%  T v8::internal::Scanner::ScanIdentifierOrKeyword()
+      1    0.1%    0.1%  T v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_RegExpReplace(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::RelocIterator::next()
+      1    0.1%    0.1%  T v8::internal::RegExpQuantifier::ToNode(int, int, bool, v8::internal::RegExpTree*, v8::internal::RegExpCompiler*, v8::internal::RegExpNode*, bool)
+      1    0.1%    0.1%  T v8::internal::RegExpBuilder::FlushText()
+      1    0.1%    0.1%  T v8::internal::Parser::SetFunctionName(v8::internal::Expression*, v8::internal::AstRawString const*, v8::internal::AstRawString const*)
+      1    0.1%    0.1%  T v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::LanguageMode, v8::internal::Object::StoreFromKeyed)
+      1    0.1%    0.1%  T v8::internal::Object::AddDataProperty(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::Object::ShouldThrow, v8::internal::Object::StoreFromKeyed)
+      1    0.1%    0.1%  T v8::internal::MarkCompactCollector::StartCompaction()
+      1    0.1%    0.1%  T v8::internal::Map::RawCopy(v8::internal::Handle<v8::internal::Map>, int)
+      1    0.1%    0.1%  T v8::internal::Map::EnsureDescriptorSlack(v8::internal::Handle<v8::internal::Map>, int)
+      1    0.1%    0.1%  T v8::internal::LookupIterator::GetFieldIndex() const
+      1    0.1%    0.1%  T v8::internal::LookupIterator::ApplyTransitionToDataProperty(v8::internal::Handle<v8::internal::JSObject>)
+      1    0.1%    0.1%  T v8::internal::LoadIC::GetMapIndependentHandler(v8::internal::LookupIterator*)
+      1    0.1%    0.1%  T v8::internal::JavaScriptFrame::GetParameter(int) const
+      1    0.1%    0.1%  T v8::internal::JSObject::SetPrototype(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, bool, v8::internal::Object::ShouldThrow)
+      1    0.1%    0.1%  T v8::internal::JSObject::MakePrototypesFast(v8::internal::Handle<v8::internal::Object>, v8::internal::WhereToStart, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::JSFunction::EnsureHasInitialMap(v8::internal::Handle<v8::internal::JSFunction>)
+      1    0.1%    0.1%  T v8::internal::Isolate::EnqueueMicrotask(v8::internal::Handle<v8::internal::Object>)
+      1    0.1%    0.1%  T v8::internal::InnerPointerToCodeCache::GcSafeFindCodeForInnerPointer(unsigned char*)
+      1    0.1%    0.1%  T v8::internal::IncrementalStringBuilder::AppendString(v8::internal::Handle<v8::internal::String>)
+      1    0.1%    0.1%  T v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()
+      1    0.1%    0.1%  T v8::internal::IC::UpdateState(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
+      1    0.1%    0.1%  T v8::internal::Heap::AllocateRawOneByteString(int, v8::internal::PretenureFlag)
+      1    0.1%    0.1%  T v8::internal::Heap::AllocateMap(v8::internal::InstanceType, int, v8::internal::ElementsKind)
+      1    0.1%    0.1%  T v8::internal::Heap::AllocateFixedArrayWithFiller(int, v8::internal::PretenureFlag, v8::internal::Object*)
+      1    0.1%    0.1%  T v8::internal::HandleScope::Extend(v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::FreeList::FindNodeFor(unsigned long, unsigned long*)
+      1    0.1%    0.1%  T v8::internal::FrameSummary::code_offset() const
+      1    0.1%    0.1%  T v8::internal::Factory::ObjectLiteralMapFromCache(v8::internal::Handle<v8::internal::Context>, int)
+      1    0.1%    0.1%  T v8::internal::Factory::NewTuple3(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
+      1    0.1%    0.1%  T v8::internal::Factory::NewMap(v8::internal::InstanceType, int, v8::internal::ElementsKind)
+      1    0.1%    0.1%  T v8::internal::Factory::NewFunctionFromSharedFunctionInfo(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Context>, v8::internal::Handle<v8::internal::Cell>, v8::internal::PretenureFlag)
+      1    0.1%    0.1%  T v8::internal::Factory::NewConsString(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
+      1    0.1%    0.1%  T v8::internal::ExternalReference::ExternalReference(unsigned char*, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Deserializer::GetBackReferencedObject(int)
+      1    0.1%    0.1%  T v8::internal::DeclarationScope::DeclarationScope(v8::internal::Zone*, v8::internal::AstValueFactory*)
+      1    0.1%    0.1%  T v8::internal::Compiler::Analyze(v8::internal::ParseInfo*, v8::internal::ThreadedList<v8::internal::ThreadedListZoneEntry<v8::internal::FunctionLiteral*> >*)
+      1    0.1%    0.1%  T v8::internal::CompiledReplacement::Apply(v8::internal::ReplacementStringBuilder*, int, int, int*)
+      1    0.1%    0.1%  T v8::internal::CodeStub::GenerateFPStubs(v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Bitmap::Clear()
+      1    0.1%    0.1%  T v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      1    0.1%    0.1%  T v8::internal::Assembler::jmp(v8::internal::Label*, v8::internal::Label::Distance)
+      1    0.1%    0.1%  T v8::internal::Assembler::bind_to(v8::internal::Label*, int)
+      1    0.1%    0.1%  T v8::internal::Accessors::FunctionPrototypeGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T v8::base::TimeDelta::InMillisecondsF() const
+      1    0.1%    0.1%  T v8::Isolate::GetCurrentContext()
+      1    0.1%    0.1%  T v8::Integer::New(v8::Isolate*, int)
+      1    0.1%    0.1%  T v8::Function::Call(v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
+      1    0.1%    0.1%  T v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
+      1    0.1%    0.1%  T node::AsyncWrap::EmitTraceEventBefore()
+      1    0.1%    0.1%  T icu_60::UnicodeString::fromUTF8(icu_60::StringPiece)
+      1    0.1%    0.1%  T _vm_region_recurse_64
+      1    0.1%    0.1%  T _proc_name
+      1    0.1%    0.1%  T _mach_port_construct
+      1    0.1%    0.1%  T __pthread_exit_if_canceled
+      1    0.1%    0.1%  T ___rec_iput
+      1    0.1%    0.1%  T _EVP_DigestInit_ex
+
+ [Summary]:
+   ticks  total  nonlib   name
+    415   36.1%   36.8%  JavaScript
+    586   51.0%   51.9%  C++
+     25    2.2%    2.2%  GC
+     20    1.7%          Shared libraries
+    128   11.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    328   67.1%   28.5%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     31    6.3%    2.7%  T v8::internal::Runtime_ThrowCalledNonCallable(int, v8::internal::Object**, v8::internal::Isolate*)
+     22    4.5%    1.9%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+     14    2.9%    1.2%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     12    2.5%    1.0%  T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    2.0%    0.9%  T v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    1.6%    0.7%  T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    1.6%    0.7%  T v8::internal::Runtime_RegExpReplace(int, v8::internal::Object**, v8::internal::Isolate*)
+      7    1.4%    0.6%  T v8::internal::Builtin_JsonParse(int, v8::internal::Object**, v8::internal::Isolate*)
+      6    1.2%    0.5%  T v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.6%    0.3%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.6%    0.3%  T v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.6%    0.3%  T v8::internal::Builtin_ArrayConcat(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.4%    0.2%  t v8::internal::(anonymous namespace)::AppendFileLocation(v8::internal::Isolate*, v8::internal::StackFrameBase*, v8::internal::IncrementalStringBuilder*)
+      2    0.4%    0.2%  T v8::internal::Runtime_StringReplaceGlobalRegExpWithString(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.4%    0.2%  T v8::internal::Runtime_RegExpInitializeAndCompile(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.4%    0.2%  T v8::internal::Runtime_PromiseRejectEventFromStack(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.4%    0.2%  T _mach_msg
+      1    0.2%    0.1%  t _uv__fs_work
+      1    0.2%    0.1%  T v8::internal::String::IsUtf8EqualTo(v8::internal::Vector<char const>, bool)
+      1    0.2%    0.1%  T v8::internal::SourcePositionTableIterator::Advance()
+      1    0.2%    0.1%  T v8::internal::Script::InitLineEnds(v8::internal::Handle<v8::internal::Script>)
+      1    0.2%    0.1%  T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_StringCharCodeAtRT(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_ResolvePossiblyDirectEval(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_RegExpExec(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_PromiseRevokeReject(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_ObjectKeys(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_InterpreterNewClosure(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_FinalizeInstanceSize(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_EnqueuePromiseReactionJob(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_DefineClass(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::IncrementalStringBuilder::AppendString(v8::internal::Handle<v8::internal::String>)
+      1    0.2%    0.1%  T v8::internal::Heap::AllocateMap(v8::internal::InstanceType, int, v8::internal::ElementsKind)
+      1    0.2%    0.1%  T v8::internal::Factory::NewConsString(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
+      1    0.2%    0.1%  T v8::internal::Builtin_ObjectSetPrototypeOf(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Builtin_ObjectDefineSetter(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Builtin_ObjectDefineProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Builtin_NumberPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.2%    0.1%  T v8::internal::Builtin_ArraySlice(int, v8::internal::Object**, v8::internal::Isolate*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    128   11.1%  UNKNOWN
+
+     77    6.7%  t node::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     77  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     77  100.0%      LazyCompile: ~fs.readSync fs.js:670:23
+     77  100.0%        LazyCompile: ~tryReadSync fs.js:536:21
+     77  100.0%          LazyCompile: ~fs.readFileSync fs.js:548:27
+     77  100.0%            LazyCompile: ~Module._extensions..js module.js:661:37
+
+     76    6.6%  t node::(anonymous namespace)::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     76  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     39   51.3%      LazyCompile: ~runInThisContext bootstrap_node.js:499:28
+     39  100.0%        LazyCompile: ~NativeModule.compile bootstrap_node.js:588:44
+     39  100.0%          LazyCompile: ~NativeModule.require bootstrap_node.js:520:34
+      5   12.8%            Script: ~<anonymous> module.js:1:11
+      3    7.7%            Script: ~<anonymous> util.js:1:11
+      3    7.7%            Script: ~<anonymous> internal/encoding.js:1:11
+      3    7.7%            Script: ~<anonymous> http.js:1:11
+      2    5.1%            Script: ~<anonymous> tty.js:1:11
+      2    5.1%            Script: ~<anonymous> internal/cluster/master.js:1:11
+      2    5.1%            Script: ~<anonymous> fs.js:1:11
+      2    5.1%            LazyCompile: ~startup bootstrap_node.js:12:19
+      2    5.1%            LazyCompile: ~setup_performance internal/process.js:14:27
+      1    2.6%            Script: ~<anonymous> tls.js:1:11
+      1    2.6%            Script: ~<anonymous> readline.js:1:11
+      1    2.6%            Script: ~<anonymous> os.js:1:11
+      1    2.6%            Script: ~<anonymous> net.js:1:11
+      1    2.6%            Script: ~<anonymous> internal/url.js:1:11
+      1    2.6%            Script: ~<anonymous> internal/trace_events_async_hooks.js:1:11
+      1    2.6%            Script: ~<anonymous> internal/loader/ModuleRequest.js:1:11
+      1    2.6%            Script: ~<anonymous> internal/loader/Loader.js:1:11
+      1    2.6%            Script: ~<anonymous> internal/child_process.js:1:11
+      1    2.6%            Script: ~<anonymous> _stream_readable.js:1:11
+      1    2.6%            Script: ~<anonymous> _http_common.js:1:11
+      1    2.6%            Script: ~<anonymous> _http_client.js:1:11
+      1    2.6%            LazyCompile: ~setupGlobalVariables bootstrap_node.js:255:32
+      1    2.6%            LazyCompile: ~setupGlobalConsole bootstrap_node.js:310:30
+      1    2.6%            LazyCompile: ~Module._load module.js:448:24
+     37   48.7%      LazyCompile: ~createScript vm.js:79:22
+     37  100.0%        LazyCompile: ~runInThisContext vm.js:138:26
+     37  100.0%          LazyCompile: ~Module._compile module.js:609:37
+     37  100.0%            LazyCompile: ~Module._extensions..js module.js:661:37
+
+     75    6.5%  T void node::StreamBase::JSMethod<node::LibuvStreamWrap, &(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     75  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     47   62.7%      LazyCompile: *Socket._writeGeneric net.js:711:42
+     36   76.6%        LazyCompile: ~Socket._write net.js:782:35
+     36  100.0%          LazyCompile: ~doWrite _stream_writable.js:389:17
+     35   97.2%            LazyCompile: ~clearBuffer _stream_writable.js:479:21
+      1    2.8%            LazyCompile: *write console.js:93:15
+      6   12.8%        LazyCompile: *Writable.write _stream_writable.js:264:36
+      6  100.0%          LazyCompile: ~Socket.write net.js:702:34
+      6  100.0%            LazyCompile: ~write console.js:93:15
+      5   10.6%        LazyCompile: *Socket._write net.js:782:35
+      5  100.0%          LazyCompile: ~doWrite _stream_writable.js:389:17
+      3   60.0%            LazyCompile: ~clearBuffer _stream_writable.js:479:21
+      2   40.0%            LazyCompile: *write console.js:93:15
+     28   37.3%      LazyCompile: ~createWriteReq net.js:786:24
+     28  100.0%        LazyCompile: ~Socket._writeGeneric net.js:711:42
+     28  100.0%          LazyCompile: ~Socket._write net.js:782:35
+     28  100.0%            LazyCompile: ~doWrite _stream_writable.js:389:17
+
+     48    4.2%  Builtin: InterpreterEntryTrampoline
+      4    8.3%    LazyCompile: ~fs.readFileSync fs.js:548:27
+      4  100.0%      LazyCompile: ~Module._extensions..js module.js:661:37
+      4  100.0%        LazyCompile: ~Module.load module.js:556:33
+      4  100.0%          LazyCompile: ~tryModuleLoad module.js:502:23
+      4  100.0%            LazyCompile: ~Module._load module.js:448:24
+      3    6.3%    LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      3    6.3%    LazyCompile: *<anonymous> /Users/ruoshui/learn/node-test/node_modules/paloma/router.js:33:10
+      3  100.0%      LazyCompile: *dispatch /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:35:23
+      2   66.7%        LazyCompile: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:31:19
+      2  100.0%          LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:144:16
+      2  100.0%            LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:130:27
+      1   33.3%        LazyCompile: ~next /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:42:58
+      1  100.0%          LazyCompile: *<anonymous> /Users/ruoshui/learn/node-test/node_modules/paloma/router.js:33:10
+      1  100.0%            LazyCompile: *dispatch /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:35:23
+      2    4.2%    LazyCompile: *emit events.js:156:44
+      1   50.0%      LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1   50.0%      LazyCompile: ~onFinish _http_outgoing.js:719:18
+      1  100.0%        LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      1    2.1%    t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%      LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:187:10
+      1  100.0%        LazyCompile: *emit events.js:156:44
+      1  100.0%          LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%            Builtin: PromiseHandle
+      1    2.1%    LazyCompile: ~warn console.js:142:39
+      1  100.0%      t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%        LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:187:10
+      1  100.0%          LazyCompile: ~emitTwo events.js:124:17
+      1  100.0%            LazyCompile: ~emit events.js:156:44
+      1    2.1%    LazyCompile: ~toRealPath module.js:163:20
+      1  100.0%      LazyCompile: ~tryFile module.js:155:17
+      1  100.0%        LazyCompile: ~tryPackage module.js:135:20
+      1  100.0%          LazyCompile: ~Module._findPath module.js:182:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename module.js:514:35
+      1    2.1%    LazyCompile: ~set length /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:190:13
+      1  100.0%      LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%        Builtin: PromiseHandle
+      1  100.0%          t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~runMicrotasksCallback internal/process/next_tick.js:119:33
+      1    2.1%    LazyCompile: ~resetSocketTimeout _http_server.js:624:28
+      1  100.0%      LazyCompile: *parserOnIncoming _http_server.js:562:26
+      1  100.0%        LazyCompile: *parserOnHeadersComplete _http_common.js:61:33
+      1    2.1%    LazyCompile: ~resOnFinish _http_server.js:522:21
+      1  100.0%      LazyCompile: ~emitNone events.js:104:18
+      1  100.0%        LazyCompile: ~emit events.js:156:44
+      1  100.0%          LazyCompile: ~onFinish _http_outgoing.js:719:18
+      1  100.0%            LazyCompile: ~_combinedTickCallback internal/process/next_tick.js:129:33
+      1    2.1%    LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    2.1%    LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/context.js:103:10
+      1  100.0%      LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%        Builtin: PromiseHandle
+      1  100.0%          t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~runMicrotasksCallback internal/process/next_tick.js:119:33
+      1    2.1%    LazyCompile: ~onFinish _http_outgoing.js:719:18
+      1  100.0%      LazyCompile: ~_combinedTickCallback internal/process/next_tick.js:129:33
+      1  100.0%        LazyCompile: ~_tickCallback internal/process/next_tick.js:151:25
+      1    2.1%    LazyCompile: ~onFinish /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:95:20
+      1  100.0%      LazyCompile: ~callback /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:53:20
+      1  100.0%        LazyCompile: ~onevent /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:81:26
+      1  100.0%          LazyCompile: ~emitNone events.js:104:18
+      1  100.0%            LazyCompile: *emit events.js:156:44
+      1    2.1%    LazyCompile: ~nextTick internal/process/next_tick.js:245:20
+      1  100.0%      LazyCompile: ~onwrite _stream_writable.js:432:17
+      1  100.0%        LazyCompile: ~Socket._writeGeneric net.js:711:42
+      1  100.0%          LazyCompile: ~Socket._write net.js:782:35
+      1  100.0%            LazyCompile: ~doWrite _stream_writable.js:389:17
+      1    2.1%    LazyCompile: ~lookup /Users/ruoshui/learn/node-test/node_modules/mime-types/index.js:132:17
+      1  100.0%      LazyCompile: ~contentType /Users/ruoshui/learn/node-test/node_modules/mime-types/index.js:77:22
+      1  100.0%        LazyCompile: ~set type /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:308:11
+      1  100.0%          Stub: CEntryStub
+      1  100.0%            LazyCompile: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/delegates/index.js:91:40
+      1    2.1%    LazyCompile: ~get headerSent /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:223:17
+      1  100.0%      LazyCompile: ~set /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:437:6
+      1  100.0%        LazyCompile: ~set length /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:190:13
+      1  100.0%          LazyCompile: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/delegates/index.js:91:40
+      1  100.0%            LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/context.js:103:10
+      1    2.1%    LazyCompile: ~end _http_outgoing.js:723:45
+      1  100.0%      LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/context.js:103:10
+      1  100.0%        LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%          Builtin: PromiseHandle
+      1  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    2.1%    LazyCompile: ~emitReadable_ _stream_readable.js:511:23
+      1  100.0%      LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      1    2.1%    LazyCompile: ~emitNone events.js:104:18
+      1  100.0%      LazyCompile: ~emit events.js:156:44
+      1  100.0%        LazyCompile: ~onFinish _http_outgoing.js:719:18
+      1  100.0%          LazyCompile: ~_combinedTickCallback internal/process/next_tick.js:129:33
+      1  100.0%            LazyCompile: ~_tickCallback internal/process/next_tick.js:151:25
+      1    2.1%    LazyCompile: ~doWrite _stream_writable.js:389:17
+      1  100.0%      LazyCompile: ~clearBuffer _stream_writable.js:479:21
+      1  100.0%        LazyCompile: ~Writable.uncork _stream_writable.js:302:37
+      1  100.0%          LazyCompile: ~end _http_outgoing.js:723:45
+      1  100.0%            LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/context.js:103:10
+      1    2.1%    LazyCompile: ~createContext /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:159:16
+      1  100.0%      LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:130:27
+      1  100.0%        LazyCompile: *emit events.js:156:44
+      1  100.0%          LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    2.1%    LazyCompile: ~contentType /Users/ruoshui/learn/node-test/node_modules/mime-types/index.js:77:22
+      1  100.0%      LazyCompile: ~set type /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:308:11
+      1  100.0%        Stub: CEntryStub
+      1  100.0%          LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%            Builtin: PromiseHandle
+      1    2.1%    LazyCompile: ~callback /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:53:20
+      1  100.0%      LazyCompile: ~onevent /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:81:26
+      1  100.0%        LazyCompile: ~emitNone events.js:104:18
+      1  100.0%          LazyCompile: *emit events.js:156:44
+      1  100.0%            LazyCompile: ~onFinish _http_outgoing.js:719:18
+      1    2.1%    LazyCompile: ~afterWrite _stream_writable.js:460:20
+      1  100.0%      LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      1    2.1%    LazyCompile: ~_writeRaw _http_outgoing.js:242:19
+      1  100.0%      LazyCompile: ~_send _http_outgoing.js:213:49
+      1  100.0%        LazyCompile: ~write_ _http_outgoing.js:620:16
+      1  100.0%          LazyCompile: ~end _http_outgoing.js:723:45
+      1  100.0%            LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/context.js:103:10
+      1    2.1%    LazyCompile: ~_flush _http_outgoing.js:813:51
+      1  100.0%      LazyCompile: ~assignSocket _http_server.js:162:62
+      1  100.0%        LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    2.1%    LazyCompile: ~_dump _http_incoming.js:313:49
+      1  100.0%      LazyCompile: ~resOnFinish _http_server.js:522:21
+      1  100.0%        LazyCompile: ~emitNone events.js:104:18
+      1  100.0%          LazyCompile: ~emit events.js:156:44
+      1  100.0%            LazyCompile: ~onFinish _http_outgoing.js:719:18
+      1    2.1%    LazyCompile: ~Socket.setTimeout net.js:381:39
+      1  100.0%      LazyCompile: ~resetSocketTimeout _http_server.js:624:28
+      1  100.0%        LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    2.1%    LazyCompile: ~Socket._write net.js:782:35
+      1  100.0%      LazyCompile: ~doWrite _stream_writable.js:389:17
+      1  100.0%        LazyCompile: ~clearBuffer _stream_writable.js:479:21
+      1  100.0%          LazyCompile: ~Writable.uncork _stream_writable.js:302:37
+      1  100.0%            LazyCompile: ~end _http_outgoing.js:723:45
+      1    2.1%    LazyCompile: ~Readable.read _stream_readable.js:365:35
+      1  100.0%      LazyCompile: ~flow _stream_readable.js:843:14
+      1  100.0%        LazyCompile: ~resume_ _stream_readable.js:819:17
+      1  100.0%          LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      1    2.1%    LazyCompile: ~Module._findPath module.js:182:28
+      1  100.0%      LazyCompile: ~Module._resolveFilename module.js:514:35
+      1  100.0%        LazyCompile: ~Module._load module.js:448:24
+      1  100.0%          LazyCompile: ~Module.require module.js:593:36
+      1  100.0%            LazyCompile: ~require internal/module.js:8:19
+      1    2.1%    LazyCompile: ~Module._compile module.js:609:37
+      1  100.0%      LazyCompile: ~Module._extensions..js module.js:661:37
+      1  100.0%        LazyCompile: ~Module.load module.js:556:33
+      1  100.0%          LazyCompile: ~tryModuleLoad module.js:502:23
+      1  100.0%            LazyCompile: ~Module._load module.js:448:24
+      1    2.1%    LazyCompile: ~InnerArrayJoin native array.js:274:24
+      1  100.0%      LazyCompile: ~join native array.js:287:46
+      1  100.0%        LazyCompile: ~Module._findPath module.js:182:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename module.js:514:35
+      1  100.0%            LazyCompile: ~Module._load module.js:448:24
+      1    2.1%    LazyCompile: ~EventEmitter events.js:27:22
+      1  100.0%      LazyCompile: ~Stream internal/streams/legacy.js:6:16
+      1  100.0%        LazyCompile: ~Readable _stream_readable.js:140:18
+      1  100.0%          LazyCompile: ~IncomingMessage _http_incoming.js:38:25
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    2.1%    LazyCompile: *parserOnIncoming _http_server.js:562:26
+      1  100.0%      LazyCompile: *parserOnHeadersComplete _http_common.js:61:33
+      1    2.1%    LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%      Builtin: PromiseHandle
+      1  100.0%        t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%          LazyCompile: ~runMicrotasksCallback internal/process/next_tick.js:119:33
+      1  100.0%            LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      1    2.1%    LazyCompile: *first /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:24:15
+      1  100.0%      LazyCompile: ~onSocket /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:106:20
+      1  100.0%        LazyCompile: ~attachFinishedListener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:90:32
+      1  100.0%          LazyCompile: ~attachListener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:140:24
+      1  100.0%            LazyCompile: ~onFinished /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:45:20
+
+     23    2.0%  StoreIC: A store IC from the snapshot
+      3   13.0%    LazyCompile: ~EventEmitter.init events.js:62:29
+      3  100.0%      LazyCompile: ~EventEmitter events.js:27:22
+      3  100.0%        LazyCompile: ~Stream internal/streams/legacy.js:6:16
+      2   66.7%          LazyCompile: ~Readable _stream_readable.js:140:18
+      2  100.0%            LazyCompile: ~IncomingMessage _http_incoming.js:38:25
+      1   33.3%          LazyCompile: ~OutgoingMessage _http_outgoing.js:68:25
+      1  100.0%            LazyCompile: ~ServerResponse _http_server.js:113:24
+      2    8.7%    LazyCompile: ~doWrite _stream_writable.js:389:17
+      2  100.0%      LazyCompile: ~clearBuffer _stream_writable.js:479:21
+      2  100.0%        LazyCompile: ~Writable.uncork _stream_writable.js:302:37
+      2  100.0%          LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      2  100.0%            Builtin: PromiseHandle
+      2    8.7%    LazyCompile: ~detachSocket _http_server.js:172:62
+      2  100.0%      LazyCompile: ~resOnFinish _http_server.js:522:21
+      2  100.0%        LazyCompile: ~emitNone events.js:104:18
+      2  100.0%          LazyCompile: *emit events.js:156:44
+      2  100.0%            LazyCompile: ~onFinish _http_outgoing.js:719:18
+      2    8.7%    LazyCompile: ~createContext /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:159:16
+      2  100.0%      LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:130:27
+      2  100.0%        LazyCompile: *emit events.js:156:44
+      2  100.0%          LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      2  100.0%            LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      2    8.7%    LazyCompile: ~ReadableState _stream_readable.js:58:23
+      2  100.0%      LazyCompile: ~Readable _stream_readable.js:140:18
+      2  100.0%        LazyCompile: ~IncomingMessage _http_incoming.js:38:25
+      2  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      2    8.7%    LazyCompile: ~OutgoingMessage _http_outgoing.js:68:25
+      2  100.0%      LazyCompile: ~ServerResponse _http_server.js:113:24
+      2  100.0%        LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      2  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    4.3%    LazyCompile: ~removeListener events.js:355:28
+      1  100.0%      LazyCompile: ~write console.js:93:15
+      1  100.0%        LazyCompile: ~warn console.js:142:39
+      1  100.0%          t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:187:10
+      1    4.3%    LazyCompile: ~read _http_incoming.js:91:47
+      1  100.0%      LazyCompile: ~resume_ _stream_readable.js:819:17
+      1  100.0%        LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      1    4.3%    LazyCompile: ~push internal/process/next_tick.js:20:7
+      1  100.0%      LazyCompile: ~nextTick internal/process/next_tick.js:245:20
+      1  100.0%        LazyCompile: ~onwrite _stream_writable.js:432:17
+      1  100.0%          LazyCompile: ~Socket._writeGeneric net.js:711:42
+      1  100.0%            LazyCompile: ~Socket._write net.js:782:35
+      1    4.3%    LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/context.js:103:10
+      1  100.0%      LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%        Builtin: PromiseHandle
+      1  100.0%          t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~runMicrotasksCallback internal/process/next_tick.js:119:33
+      1    4.3%    LazyCompile: ~listener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:161:20
+      1  100.0%      LazyCompile: ~onFinish /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:95:20
+      1  100.0%        LazyCompile: ~callback /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:53:20
+      1  100.0%          LazyCompile: ~onevent /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:81:26
+      1  100.0%            LazyCompile: ~emitNone events.js:104:18
+      1    4.3%    LazyCompile: ~append internal/linkedlist.js:29:16
+      1  100.0%      LazyCompile: ~insert timers.js:167:16
+      1  100.0%        LazyCompile: ~exports._unrefActive timers.js:157:32
+      1  100.0%          LazyCompile: ~Socket.setTimeout net.js:381:39
+      1  100.0%            LazyCompile: ~resOnFinish _http_server.js:522:21
+      1    4.3%    LazyCompile: ~_storeHeader _http_outgoing.js:287:22
+      1  100.0%      LazyCompile: ~writeHead _http_server.js:189:19
+      1  100.0%        LazyCompile: ~_implicitHeader _http_server.js:184:68
+      1  100.0%          LazyCompile: ~write_ _http_outgoing.js:620:16
+      1  100.0%            LazyCompile: ~end _http_outgoing.js:723:45
+      1    4.3%    LazyCompile: ~Readable _stream_readable.js:140:18
+      1  100.0%      LazyCompile: ~IncomingMessage _http_incoming.js:38:25
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    4.3%    LazyCompile: ~IncomingMessage _http_incoming.js:38:25
+      1  100.0%      LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    4.3%    LazyCompile: ~BufferList internal/streams/BufferList.js:10:14
+      1  100.0%      LazyCompile: ~ReadableState _stream_readable.js:58:23
+      1  100.0%        LazyCompile: ~Readable _stream_readable.js:140:18
+      1  100.0%          LazyCompile: ~IncomingMessage _http_incoming.js:38:25
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+
+     20    1.7%  t node::InternalModuleReadFile(v8::FunctionCallbackInfo<v8::Value> const&)
+     20  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     20  100.0%      LazyCompile: ~readPackage module.js:113:21
+     20  100.0%        LazyCompile: ~tryPackage module.js:135:20
+     20  100.0%          LazyCompile: ~Module._findPath module.js:182:28
+     20  100.0%            LazyCompile: ~Module._resolveFilename module.js:514:35
+
+     18    1.6%  Builtin: CallFunction_ReceiverIsAny
+      2   11.1%    LazyCompile: ~_writeRaw _http_outgoing.js:242:19
+      2  100.0%      LazyCompile: ~_send _http_outgoing.js:213:49
+      2  100.0%        LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      2  100.0%          Builtin: PromiseHandle
+      2  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    5.6%    LazyCompile: ~validateHeader _http_outgoing.js:485:24
+      1  100.0%      LazyCompile: ~setHeader _http_outgoing.js:497:57
+      1  100.0%        LazyCompile: ~set /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:437:6
+      1  100.0%          LazyCompile: ~set type /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:308:11
+      1  100.0%            Stub: CEntryStub
+      1    5.6%    LazyCompile: ~updateChildren module.js:63:24
+      1  100.0%      LazyCompile: ~Module module.js:69:16
+      1  100.0%        LazyCompile: ~Module._load module.js:448:24
+      1  100.0%          LazyCompile: ~Module.require module.js:593:36
+      1  100.0%            LazyCompile: ~require internal/module.js:8:19
+      1    5.6%    LazyCompile: ~tryModuleLoad module.js:502:23
+      1  100.0%      LazyCompile: ~Module._load module.js:448:24
+      1  100.0%        LazyCompile: ~Module.require module.js:593:36
+      1  100.0%          LazyCompile: ~require internal/module.js:8:19
+      1  100.0%            Script: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:1:11
+      1    5.6%    LazyCompile: ~tickDone internal/process/next_tick.js:88:20
+      1  100.0%      LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      1    5.6%    LazyCompile: ~stringSlice buffer.js:555:21
+      1  100.0%      LazyCompile: ~Buffer.toString buffer.js:609:37
+      1  100.0%        LazyCompile: ~fs.readFileSync fs.js:548:27
+      1  100.0%          LazyCompile: ~Module._extensions..js module.js:661:37
+      1  100.0%            LazyCompile: ~Module.load module.js:556:33
+      1    5.6%    LazyCompile: ~onwrite _stream_writable.js:432:17
+      1  100.0%      LazyCompile: ~Socket._writeGeneric net.js:711:42
+      1  100.0%        LazyCompile: ~Socket._write net.js:782:35
+      1  100.0%          LazyCompile: ~doWrite _stream_writable.js:389:17
+      1  100.0%            LazyCompile: ~clearBuffer _stream_writable.js:479:21
+      1    5.6%    LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:144:16
+      1  100.0%      LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:130:27
+      1  100.0%        LazyCompile: ~emitTwo events.js:124:17
+      1  100.0%          LazyCompile: ~emit events.js:156:44
+      1  100.0%            LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      1    5.6%    LazyCompile: ~first /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:24:15
+      1  100.0%      LazyCompile: ~onSocket /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:106:20
+      1  100.0%        LazyCompile: ~attachFinishedListener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:90:32
+      1  100.0%          LazyCompile: ~attachListener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:140:24
+      1  100.0%            LazyCompile: ~onFinished /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:45:20
+      1    5.6%    LazyCompile: ~escapeHeaderValue _http_outgoing.js:686:27
+      1  100.0%      LazyCompile: ~storeHeader _http_outgoing.js:426:21
+      1  100.0%        LazyCompile: ~_storeHeader _http_outgoing.js:287:22
+      1  100.0%          LazyCompile: ~writeHead _http_server.js:189:19
+      1  100.0%            LazyCompile: ~_implicitHeader _http_server.js:184:68
+      1    5.6%    LazyCompile: ~dispatch /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:35:23
+      1  100.0%      LazyCompile: ~next /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:42:58
+      1  100.0%        LazyCompile: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/paloma/router.js:33:10
+      1  100.0%          LazyCompile: ~dispatch /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:35:23
+      1  100.0%            LazyCompile: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:31:19
+      1    5.6%    LazyCompile: ~createWriteReq net.js:786:24
+      1  100.0%      LazyCompile: ~Socket._writeGeneric net.js:711:42
+      1  100.0%        LazyCompile: ~Socket._write net.js:782:35
+      1  100.0%          LazyCompile: ~doWrite _stream_writable.js:389:17
+      1  100.0%            LazyCompile: ~writeOrBuffer _stream_writable.js:349:23
+      1    5.6%    LazyCompile: ~createContext /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:159:16
+      1  100.0%      LazyCompile: ~handleRequest /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:130:27
+      1  100.0%        LazyCompile: *emit events.js:156:44
+      1  100.0%          LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    5.6%    LazyCompile: ~Stream internal/streams/legacy.js:6:16
+      1  100.0%      LazyCompile: ~Readable _stream_readable.js:140:18
+      1  100.0%        LazyCompile: ~IncomingMessage _http_incoming.js:38:25
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    5.6%    LazyCompile: ~Socket.setTimeout net.js:381:39
+      1  100.0%      LazyCompile: ~resOnFinish _http_server.js:522:21
+      1  100.0%        LazyCompile: ~emitNone events.js:104:18
+      1  100.0%          LazyCompile: *emit events.js:156:44
+      1  100.0%            LazyCompile: ~onFinish _http_outgoing.js:719:18
+      1    5.6%    LazyCompile: ~Readable.on _stream_readable.js:771:33
+      1  100.0%      LazyCompile: ~once events.js:338:44
+      1  100.0%        LazyCompile: ~write console.js:93:15
+      1  100.0%          LazyCompile: ~warn console.js:142:39
+      1  100.0%            t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    5.6%    LazyCompile: ~Module._resolveFilename module.js:514:35
+      1  100.0%      LazyCompile: ~Module._load module.js:448:24
+      1  100.0%        LazyCompile: ~Module.require module.js:593:36
+      1  100.0%          LazyCompile: ~require internal/module.js:8:19
+      1  100.0%            Script: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/mongodb-core/lib/topologies/server.js:1:11
+
+     18    1.6%  /usr/lib/system/libsystem_platform.dylib
+      2   11.1%    T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   50.0%      LazyCompile: ~set status /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:82:13
+      1  100.0%        Stub: CEntryStub
+      1  100.0%          LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%            Builtin: PromiseHandle
+      1   50.0%      LazyCompile: ~<anonymous> internal/process/promises.js:21:34
+      1  100.0%        Stub: CEntryStub
+      1  100.0%          Builtin: PromiseReject
+      1  100.0%            LazyCompile: ~dispatch /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:35:23
+      2   11.1%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   50.0%      LazyCompile: ~tryModuleLoad module.js:502:23
+      1  100.0%        LazyCompile: ~Module._load module.js:448:24
+      1  100.0%          LazyCompile: ~Module.runMain module.js:691:26
+      1  100.0%            LazyCompile: ~startup bootstrap_node.js:12:19
+      1   50.0%      LazyCompile: ~insert timers.js:167:16
+      1  100.0%        LazyCompile: ~exports._unrefActive timers.js:157:32
+      1  100.0%          LazyCompile: ~Socket.setTimeout net.js:381:39
+      1  100.0%            LazyCompile: ~connectionListenerInternal _http_server.js:301:36
+      1    5.6%    T v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~setHeader _http_outgoing.js:497:57
+      1  100.0%        LazyCompile: ~set /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:437:6
+      1  100.0%          LazyCompile: ~set type /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:308:11
+      1  100.0%            Stub: CEntryStub
+      1    5.6%    T v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~realpathSync fs.js:1579:40
+      1  100.0%        LazyCompile: ~toRealPath module.js:163:20
+      1  100.0%          LazyCompile: ~tryFile module.js:155:17
+      1  100.0%            LazyCompile: ~tryExtensions module.js:170:23
+      1    5.6%    T v8::internal::Builtin_JsonParse(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~readPackage module.js:113:21
+      1  100.0%        LazyCompile: ~tryPackage module.js:135:20
+      1  100.0%          LazyCompile: ~Module._findPath module.js:182:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename module.js:514:35
+      1    5.6%    Builtin: StringPrototypeReplace
+      1  100.0%      LazyCompile: *tokensToRegExp /Users/ruoshui/learn/node-test/node_modules/path-to-regexp/index.js:299:25
+      1  100.0%        LazyCompile: *<anonymous> /Users/ruoshui/learn/node-test/node_modules/paloma/router.js:33:10
+      1  100.0%          LazyCompile: *dispatch /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:35:23
+      1  100.0%            LazyCompile: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/koa-compose/index.js:31:19
+      1    5.6%    Builtin: StringPrototypeIndexOf
+      1  100.0%      LazyCompile: ~nullCheck fs.js:157:19
+      1  100.0%        LazyCompile: ~fs.openSync fs.js:642:23
+      1  100.0%          LazyCompile: ~fs.readFileSync fs.js:548:27
+      1  100.0%            LazyCompile: ~Module._extensions..js module.js:661:37
+
+     14    1.2%  t node::Binding(v8::FunctionCallbackInfo<v8::Value> const&)
+     14  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      7   50.0%      Script: ~<anonymous> bootstrap_node.js:10:10
+      5   35.7%      Script: ~<anonymous> crypto.js:1:11
+      5  100.0%        LazyCompile: ~NativeModule.compile bootstrap_node.js:588:44
+      5  100.0%          LazyCompile: ~NativeModule.require bootstrap_node.js:520:34
+      5  100.0%            LazyCompile: ~Module._load module.js:448:24
+      1    7.1%      Script: ~<anonymous> timers.js:1:11
+      1  100.0%        LazyCompile: ~NativeModule.compile bootstrap_node.js:588:44
+      1  100.0%          LazyCompile: ~NativeModule.require bootstrap_node.js:520:34
+      1  100.0%            LazyCompile: ~setupGlobalTimeouts bootstrap_node.js:300:31
+      1    7.1%      Script: ~<anonymous> internal/encoding.js:1:11
+      1  100.0%        LazyCompile: ~NativeModule.compile bootstrap_node.js:588:44
+      1  100.0%          LazyCompile: ~NativeModule.require bootstrap_node.js:520:34
+      1  100.0%            Script: ~<anonymous> util.js:1:11
+
+     14    1.2%  t node::(anonymous namespace)::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     14  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     14  100.0%      LazyCompile: ~fs.closeSync fs.js:611:24
+     14  100.0%        LazyCompile: ~fs.readFileSync fs.js:548:27
+     14  100.0%          LazyCompile: ~Module._extensions..js module.js:661:37
+     14  100.0%            LazyCompile: ~Module.load module.js:556:33
+
+     14    1.2%  T _task_info
+
+     14    1.2%  KeyedLoadIC: A keyed load IC from the snapshot
+      2   14.3%    LazyCompile: *_addHeaderLines _http_incoming.js:119:25
+      2  100.0%      LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+      1    7.1%    LazyCompile: ~validateAsyncId internal/async_hooks.js:114:25
+      1  100.0%      LazyCompile: ~emitBeforeScript internal/async_hooks.js:317:26
+      1  100.0%        LazyCompile: ~_tickCallback internal/process/next_tick.js:151:25
+      1    7.1%    LazyCompile: ~removeAllListeners events.js:410:32
+      1  100.0%      LazyCompile: ~_dump _http_incoming.js:313:49
+      1  100.0%        LazyCompile: ~resOnFinish _http_server.js:522:21
+      1  100.0%          LazyCompile: ~emitNone events.js:104:18
+      1  100.0%            LazyCompile: *emit events.js:156:44
+      1    7.1%    LazyCompile: ~pushAsyncIds internal/async_hooks.js:352:22
+      1  100.0%      LazyCompile: ~emitBeforeScript internal/async_hooks.js:317:26
+      1  100.0%        LazyCompile: ~_tickCallback internal/process/next_tick.js:151:25
+      1    7.1%    LazyCompile: ~nextTick internal/process/next_tick.js:245:20
+      1  100.0%      LazyCompile: ~resume _stream_readable.js:812:16
+      1  100.0%        LazyCompile: ~Readable.resume _stream_readable.js:802:37
+      1  100.0%          LazyCompile: ~_dump _http_incoming.js:313:49
+      1  100.0%            LazyCompile: ~resOnFinish _http_server.js:522:21
+      1    7.1%    LazyCompile: ~insert timers.js:167:16
+      1  100.0%      LazyCompile: ~exports._unrefActive timers.js:157:32
+      1  100.0%        LazyCompile: ~_unrefTimer net.js:268:52
+      1  100.0%          LazyCompile: ~Socket._writeGeneric net.js:711:42
+      1  100.0%            LazyCompile: ~Socket._write net.js:782:35
+      1    7.1%    LazyCompile: ~fs.readFileSync fs.js:548:27
+      1  100.0%      LazyCompile: ~Module._extensions..js module.js:661:37
+      1  100.0%        LazyCompile: ~Module.load module.js:556:33
+      1  100.0%          LazyCompile: ~tryModuleLoad module.js:502:23
+      1  100.0%            LazyCompile: ~Module._load module.js:448:24
+      1    7.1%    LazyCompile: ~emitNone events.js:104:18
+      1  100.0%      LazyCompile: *emit events.js:156:44
+      1  100.0%        LazyCompile: ~onFinish _http_outgoing.js:719:18
+      1  100.0%          LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      1    7.1%    LazyCompile: ~emit events.js:156:44
+      1  100.0%      LazyCompile: ~onconnection net.js:1534:22
+      1    7.1%    LazyCompile: ~charset /Users/ruoshui/learn/node-test/node_modules/mime-types/index.js:49:18
+      1  100.0%      LazyCompile: ~contentType /Users/ruoshui/learn/node-test/node_modules/mime-types/index.js:77:22
+      1  100.0%        LazyCompile: ~set type /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:308:11
+      1  100.0%          Stub: CEntryStub
+      1  100.0%            LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1    7.1%    LazyCompile: *emit events.js:156:44
+      1  100.0%      LazyCompile: ~emitReadable_ _stream_readable.js:511:23
+      1  100.0%        LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+
+     13    1.1%  t node::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     13  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     13  100.0%      LazyCompile: ~stat module.js:50:14
+      7   53.8%        LazyCompile: ~Module._findPath module.js:182:28
+      7  100.0%          LazyCompile: ~Module._resolveFilename module.js:514:35
+      7  100.0%            LazyCompile: ~Module._load module.js:448:24
+      6   46.2%        LazyCompile: ~tryFile module.js:155:17
+      6  100.0%          LazyCompile: ~tryExtensions module.js:170:23
+      6  100.0%            LazyCompile: ~Module._findPath module.js:182:28
+
+     13    1.1%  T _http_parser_execute
+
+     12    1.0%  Builtin: KeyedLoadIC_Megamorphic
+      3   25.0%    LazyCompile: *_tickCallback internal/process/next_tick.js:151:25
+      2   16.7%    LazyCompile: ~setHeader _http_outgoing.js:497:57
+      2  100.0%      LazyCompile: ~set /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:437:6
+      2  100.0%        LazyCompile: ~set length /Users/ruoshui/learn/node-test/node_modules/koa/lib/response.js:190:13
+      1   50.0%          LazyCompile: ~<anonymous> /Users/ruoshui/learn/node-test/node_modules/delegates/index.js:91:40
+      1  100.0%            LazyCompile: ~onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/context.js:103:10
+      1   50.0%          LazyCompile: *onerror /Users/ruoshui/learn/node-test/node_modules/koa/lib/application.js:147:21
+      1  100.0%            Builtin: PromiseHandle
+      2   16.7%    LazyCompile: ~insert timers.js:167:16
+      2  100.0%      LazyCompile: ~exports._unrefActive timers.js:157:32
+      2  100.0%        LazyCompile: ~Socket.setTimeout net.js:381:39
+      2  100.0%          LazyCompile: ~resOnFinish _http_server.js:522:21
+      2  100.0%            LazyCompile: ~emitNone events.js:104:18
+      1    8.3%    LazyCompile: *removeListener events.js:355:28
+      1  100.0%      LazyCompile: ~cleanup /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:58:19
+      1  100.0%        LazyCompile: ~onFinish /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:95:20
+      1  100.0%          LazyCompile: ~callback /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:53:20
+      1  100.0%            LazyCompile: ~onevent /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:81:26
+      1    8.3%    LazyCompile: *parserOnHeadersComplete _http_common.js:61:33
+      1    8.3%    LazyCompile: *insert timers.js:167:16
+      1  100.0%      LazyCompile: ~exports._unrefActive timers.js:157:32
+      1  100.0%        LazyCompile: ~Socket.setTimeout net.js:381:39
+      1  100.0%          LazyCompile: ~resetSocketTimeout _http_server.js:624:28
+      1  100.0%            LazyCompile: ~parserOnIncoming _http_server.js:562:26
+      1    8.3%    LazyCompile: *_addListener events.js:233:22
+      1  100.0%      LazyCompile: *first /Users/ruoshui/learn/node-test/node_modules/ee-first/index.js:24:15
+      1  100.0%        LazyCompile: ~attachFinishedListener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:90:32
+      1  100.0%          LazyCompile: ~attachListener /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:140:24
+      1  100.0%            LazyCompile: ~onFinished /Users/ruoshui/learn/node-test/node_modules/on-finished/index.js:45:20
+      1    8.3%    LazyCompile: *_addHeaderLines _http_incoming.js:119:25
+      1  100.0%      LazyCompile: ~parserOnHeadersComplete _http_common.js:61:33
+

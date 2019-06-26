@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="flamegraph-svg" 
+  data-width="1200" width="1200" 
+  height="162" data-height="162"
+  onload="init(evt)" 
+  viewBox="0 0 1200 162" 
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<defs>
+	<linearGradient id="background" y1="0" y2="1" x1="0" x2="0">
+    <stop stop-color="#eeeeee" offset="5%" />
+    <stop stop-color="#eeeeb0" offset="95%" />
+	</linearGradient>
+</defs>
+<style type="text/css">
+	.func_g:hover { stroke:black; stroke-width:0.5; }
+</style>
+<script type="text/javascript">
+	var details;
+	function init(evt) { details = document.getElementById("details").firstChild; }
+  function s(info) { details.nodeValue = "Function:: " + info; }
+	function c() { details.nodeValue = ' '; }
+</script>
+
+<rect x="0.0" y="0" id="svg-background" width="1200" height="162" fill="url(#background)"  />
+<!--<text text-anchor="middle" x="600" y="24" font-size="17" font-family="Verdana" fill="rgb(0,0,0)">Flame Graph</text>-->
+<text text-anchor="left" x="10" y="154" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="details"> </text>
+
+<g class="func_g " onmouseover="typeof s === 'function' && s('setSamplingInterval (2 samples), 25%)')" onmouseout="typeof c === 'function' && c()" data-search="setsamplinginterval" data-funcname="setSamplingInterval">
+  <title>setSamplingInterval (2 samples), 25%)</title>
+  <rect x="157.5" data-x="157.5" y="33" width="295" data-width="295" height="15" data-height="15" fill="rgb(224, 154, 21)" rx="2" ry="2"></rect>
+  <text data-x="160.5" x="160.5" y="43.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">setSamplingInterval</text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s('stopProfiling /Users/ruoshui/learn/node-test/node_modules/v8-profiler/v8-profiler.js:218 (2 samples), 25%)')" onmouseout="typeof c === 'function' && c()" data-search="stopprofiling /users/ruoshui/learn/node-test/node_modules/v8-profiler/v8-profiler.js:218" data-funcname="stopProfiling /Users/ruoshui/learn/node-test/node_modules/v8-profiler/v8-profiler.js:218">
+  <title>stopProfiling /Users/ruoshui/learn/node-test/node_modules/v8-profiler/v8-profiler.js:218 (2 samples), 25%)</title>
+  <rect x="157.5" data-x="157.5" y="49" width="295" data-width="295" height="15" data-height="15" fill="rgb(238, 150, 36)" rx="2" ry="2"></rect>
+  <text data-x="160.5" x="160.5" y="59.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">stopProfiling /Users/ruoshui/learn/node..</text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s('controller /Users/ruoshui/learn/node-test/test/app2.js:18 (2 samples), 25%)')" onmouseout="typeof c === 'function' && c()" data-search="controller /users/ruoshui/learn/node-test/test/app2.js:18" data-funcname="controller /Users/ruoshui/learn/node-test/test/app2.js:18">
+  <title>controller /Users/ruoshui/learn/node-test/test/app2.js:18 (2 samples), 25%)</title>
+  <rect x="157.5" data-x="157.5" y="65" width="295" data-width="295" height="15" data-height="15" fill="rgb(232, 146, 30)" rx="2" ry="2"></rect>
+  <text data-x="160.5" x="160.5" y="75.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">controller /Users/ruoshui/learn/node-te..</text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s(' (2 samples), 25%)')" onmouseout="typeof c === 'function' && c()" data-search="" data-funcname="">
+  <title> (2 samples), 25%)</title>
+  <rect x="157.5" data-x="157.5" y="81" width="295" data-width="295" height="15" data-height="15" fill="rgb(255, 230, 55)" rx="2" ry="2"></rect>
+  <text data-x="160.5" x="160.5" y="91.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"></text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s(' (2 samples), 25%)')" onmouseout="typeof c === 'function' && c()" data-search="" data-funcname="">
+  <title> (2 samples), 25%)</title>
+  <rect x="157.5" data-x="157.5" y="97" width="295" data-width="295" height="15" data-height="15" fill="rgb(255, 230, 55)" rx="2" ry="2"></rect>
+  <text data-x="160.5" x="160.5" y="107.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"></text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s('(idle) (1 samples), 12.5%)')" onmouseout="typeof c === 'function' && c()" data-search="(idle)" data-funcname="(idle)">
+  <title>(idle) (1 samples), 12.5%)</title>
+  <rect x="452.5" data-x="452.5" y="97" width="147.5" data-width="147.5" height="15" data-height="15" fill="rgb(251, 187, 51)" rx="2" ry="2"></rect>
+  <text data-x="455.5" x="455.5" y="107.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">(idle)</text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s('(program) (3 samples), 37.5%)')" onmouseout="typeof c === 'function' && c()" data-search="(program)" data-funcname="(program)">
+  <title>(program) (3 samples), 37.5%)</title>
+  <rect x="600" data-x="600" y="97" width="442.5" data-width="442.5" height="15" data-height="15" fill="rgb(242, 201, 40)" rx="2" ry="2"></rect>
+  <text data-x="603" x="603" y="107.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">(program)</text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s('Promise.then /Users/ruoshui/learn/node-test/node_modules/bluebird/js/release/promise.js:114 (1 samples), 12.5%)')" onmouseout="typeof c === 'function' && c()" data-search="promise.then /users/ruoshui/learn/node-test/node_modules/bluebird/js/release/promise.js:114" data-funcname="Promise.then /Users/ruoshui/learn/node-test/node_modules/bluebird/js/release/promise.js:114">
+  <title>Promise.then /Users/ruoshui/learn/node-test/node_modules/bluebird/js/release/promise.js:114 (1 samples), 12.5%)</title>
+  <rect x="1042.5" data-x="1042.5" y="65" width="147.5" data-width="147.5" height="15" data-height="15" fill="rgb(245, 200, 44)" rx="2" ry="2"></rect>
+  <text data-x="1045.5" x="1045.5" y="75.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">Promise.then /User..</text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s('runMicrotasks (1 samples), 12.5%)')" onmouseout="typeof c === 'function' && c()" data-search="runmicrotasks" data-funcname="runMicrotasks">
+  <title>runMicrotasks (1 samples), 12.5%)</title>
+  <rect x="1042.5" data-x="1042.5" y="81" width="147.5" data-width="147.5" height="15" data-height="15" fill="rgb(233, 156, 30)" rx="2" ry="2"></rect>
+  <text data-x="1045.5" x="1045.5" y="91.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">runMicrotasks</text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s('_tickCallback internal/process/next_tick.js:151 (1 samples), 12.5%)')" onmouseout="typeof c === 'function' && c()" data-search="_tickcallback internal/process/next_tick.js:151" data-funcname="_tickCallback internal/process/next_tick.js:151">
+  <title>_tickCallback internal/process/next_tick.js:151 (1 samples), 12.5%)</title>
+  <rect x="1042.5" data-x="1042.5" y="97" width="147.5" data-width="147.5" height="15" data-height="15" fill="rgb(229, 131, 26)" rx="2" ry="2"></rect>
+  <text data-x="1045.5" x="1045.5" y="107.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">_tickCallback inte..</text>
+</g>
+<g class="func_g " onmouseover="typeof s === 'function' && s('(root) (8 samples), 100%)')" onmouseout="typeof c === 'function' && c()" data-search="(root)" data-funcname="(root)">
+  <title>(root) (8 samples), 100%)</title>
+  <rect x="10" data-x="10" y="113" width="1180" data-width="1180" height="15" data-height="15" fill="rgb(245, 200, 44)" rx="2" ry="2"></rect>
+  <text data-x="13" x="13" y="123.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)">(root)</text>
+</g>
+
+</svg>

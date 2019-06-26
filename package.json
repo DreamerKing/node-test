@@ -1,0 +1,25 @@
+{
+  "name": "@d6k/node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "paloma": "^1.2.3"
+  },
+  "devDependencies": {
+    "bluebird": "^3.5.3",
+    "flamegraph": "^1.1.0",
+    "v8-analytics": "^1.3.7",
+    "v8-profiler": "^5.7.0"
+  }
+}
